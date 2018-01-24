@@ -1,9 +1,18 @@
 <html>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="./index.js"></script>
 
-<div id="app">
-    <h1>{{ message }}</h1>
-</div>
+<head>
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+
+<body>
+    <div id="app">
+        <input type="text" v-on:input="change_message">
+        <h1>{{ message }}</h1>
+    </div>
+</body>
+
+<script src="index.js"></script>
 
 </html>
