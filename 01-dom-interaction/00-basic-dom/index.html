@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+
+<body>
+    <div id="app">
+        <h1 v-once>{{ message }}</h1>
+        <p>{{ say_hello() }} - <a v-bind:href="link" >google</a></p>
+        <br>
+        <p v-html="finished_link"></p>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+
+<body>
+    <div id="app">
+        <button v-on:click="up_counter(2, $event)">Click Me</button>
+        <p> {{ counter }} </p>
+        <p v-on:mousemove="update_coor">
+            coordinates : {{ x }} - {{ y }}
+             - <span v-on:mousemove.stop=""> DEAD SPOT</span>
+        </p>
+        <input type="text" v-on:keyup.enter="alert_me">
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,11 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="index.css">
+<div id="exercise">
+    <div class="demo" @click="attachRed = !attachRed" :class="divClass"></div>
+    <div class="demo" :class="[color, divClass]"></div>
+    <div class="demo"></div>
+    <br>
+    <input type="text" v-model="color">
+</div>
+
+<script src="index.js"></script>

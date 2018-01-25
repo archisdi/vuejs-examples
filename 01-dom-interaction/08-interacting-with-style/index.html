@@ -1,0 +1,11 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="index.css">
+<div id="exercise">
+    <div class="demo" :style="myStyle"></div>
+    <div class="demo" :style="myStyle"></div>
+    <div class="demo" :style="[myStyle, {height: '50px'}]"></div>
+    <br>
+    <input type="text" v-model="color">
+</div>
+
+<script src="index.js"></script>

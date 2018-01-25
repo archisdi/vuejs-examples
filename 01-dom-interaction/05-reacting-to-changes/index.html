@@ -1,0 +1,14 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+    <div>
+        <button v-on:click="counter++">Increase</button>
+        <button v-on:click="counter--">Decrease</button>
+        <button v-on:click="secondCounter++">Second Counter</button>
+        <br>
+        <p>Counter : {{ counter }} - {{ secondCounter }}</p>
+        <p>Result : {{ result() }} - {{ output }}</p>
+    </div>
+</div>
+
+<script src="index.js"></script>
