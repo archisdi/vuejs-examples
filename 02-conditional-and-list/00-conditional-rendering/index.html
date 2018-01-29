@@ -1,0 +1,13 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+    <button @click="show = !show">change</button>
+    <p v-if="show">You can see me</p>
+    <p v-else>Now can see me</p>
+    <template>
+        <p v-if="!show">template paragraph</p>
+    </template>
+    <p>You can also see me</p>
+</div>
+
+<script src="index.js"></script>

@@ -1,0 +1,21 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+    <h1>Tags</h1>
+    <button @click="tags.push('new key')">add tag</button>
+    <ul>
+        <li v-for="(tag, i) in tags" :key="tag">{{ tag }} ({{ i }})</li>
+    </ul>
+    <br>
+    <h1>Persons</h1>
+    <template v-for="person in persons">
+        <p v-for="(value, key, index) in person">
+            {{ key }}: {{ value }} - ({{ index }})
+        </p>
+    </template>
+    <br>
+    <h1>Numbers</h1>
+    <p v-for="n in 10">{{ n }}</p>
+</div>
+
+<script src="index.js"></script>
