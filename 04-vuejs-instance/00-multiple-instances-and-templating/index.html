@@ -1,0 +1,28 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <h1 ref="heading">{{ title }}</h1>
+  <button v-on:click="show" ref="showButton">Show Paragraph</button>
+  <p v-if="showParagraph">This is not always visible</p>
+</div>
+
+<hr>
+
+<div id="app2">
+  <h1 ref="heading">{{ title }}</h1>
+  <button @click="onChange">Change something in vue1</button>
+  <hello></hello>
+  <hello></hello>
+</div>
+
+<hr>
+
+<div id="app3">
+
+</div>
+
+<hr>
+
+<div class="hello"></div>
+
+<script src="app.js"></script>
