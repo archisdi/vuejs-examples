@@ -1,16 +1,17 @@
 <template>
     <div class="col-xs-12 col-sm-6">
         <ul class="list-group">
-            <li class="list-group-item" v-for="server in servers" @click="">
-                Server #{{ server.id }}
+            <li class="list-group-item" v-for="server in servers" @click="changeServer(server)">
+                Server #{{ server.id }} - {{ server.status }}
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+    import { eventBus } from '../../main';
     export default {
-        data:function () {
+        data:() => {
           return {
               servers:[
                   { id: 1, status:'critical'},
@@ -22,7 +23,9 @@
           }
         },
         methods:{
-
+            changeServer(server){
+                eventBus.changeServer(server);
+            }
         }
     }
 </script>
